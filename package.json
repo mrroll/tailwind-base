@@ -1,0 +1,19 @@
+{
+  "name": "@mrroll/tailwind-base",
+  "version": "0.1.0-alpha",
+  "license": "MIT",
+  "dependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.0",
+    "@tailwindcss/forms": "^0.5.0",
+    "@tailwindcss/line-clamp": "^0.3.1",
+    "@tailwindcss/typography": "^0.5.2",
+    "tailwindcss": "^3.0.23",
+    "tailwindcss-animate": "^1.0.5",
+    "tailwindcss-border-gradient-radius": "^3.0.1"
+  },
+  "devDependencies": {
+    "@mrroll/eslint-config": "^6.2.2",
+    "eslint": "^8.12.0",
+    "prettier": "^2.6.2"
+  }
+}
