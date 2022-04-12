@@ -1,14 +1,4 @@
-// https://tailwindcss.com/docs/customizing-colors#using-css-variables
-function withOpacityValue(variable) {
-  return ({ opacityValue }) => {
-    if (opacityValue === undefined) {
-      return `rgb(var(${variable}))`;
-    }
-    return `rgb(var(${variable}) / ${opacityValue})`;
-  };
-}
-
-module.exports.withOpacityValue = withOpacityValue;
+const withOpacityValue = require("./withOpacityValue");
 
 const colors = {
   "color-brand": withOpacityValue("--tw-custom-color-brand"),
