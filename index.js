@@ -20,11 +20,14 @@ module.exports = plugin(({ addBase }) => {
     "html, body, #__next, #root": {
       height: "100%",
     },
-    "p, h1, h2, h3, h4, h5, h6, li, dl, dt, blockquote": {
-      "overflow-wrap": "break-word",
-    },
     "#__next, #root": {
       isolation: "isolate",
+    },
+    "p, h1, h2, h3, h4, h5, h6, li, dl, dt, blockquote, pre": {
+      "overflow-wrap": "break-word",
+    },
+    pre: {
+      "white-space": "normal",
     },
   });
 });
