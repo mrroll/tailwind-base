@@ -10,6 +10,7 @@ module.exports = plugin(({ addBase }) => {
       "--tw-custom-color-text": "17 24 39",
       "--tw-custom-color-positive": "16 185 129",
       "--tw-custom-color-negative": "249 115 22",
+      "--tw-custom-animation-duration": "150ms",
       "&.dark-mode": {
         "--tw-custom-color-text": "250 250 250",
         "--tw-custom-color-background": "17 24 39",
