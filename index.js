@@ -1,19 +1,19 @@
 const plugin = require("tailwindcss/plugin");
+const toChannels = require("./toChannels");
 
 module.exports = plugin(({ addBase }) => {
   addBase({
     // Custom Colors which can be used with various Tailwind Classes.
     ":root": {
-      "--tw-custom-color-brand": "99 102 241",
-      "--tw-custom-color-accent": "59 130 246",
-      "--tw-custom-color-background": "250 250 250",
-      "--tw-custom-color-text": "17 24 39",
-      "--tw-custom-color-positive": "16 185 129",
-      "--tw-custom-color-negative": "249 115 22",
-      "--tw-custom-animation-duration": "150ms",
+      "--tw-custom-color-brand": toChannels("#6366F1"),
+      "--tw-custom-color-accent": toChannels("#3B82F6"),
+      "--tw-custom-color-background": toChannels("#FAFAFA"),
+      "--tw-custom-color-text": toChannels("#111827"),
+      "--tw-custom-color-positive": toChannels("#10B981"),
+      "--tw-custom-color-negative": toChannels("#F97316"),
       "&.dark-mode": {
-        "--tw-custom-color-text": "250 250 250",
-        "--tw-custom-color-background": "17 24 39",
+        "--tw-custom-color-text": toChannels("#FAFAFA"),
+        "--tw-custom-color-background": toChannels("#111827"),
       },
     },
     // https://www.joshwcomeau.com/css/custom-css-reset/#digit-root-stacking-context
