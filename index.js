@@ -7,13 +7,13 @@ module.exports = plugin(({ addBase }) => {
     ":root": {
       "--tw-custom-color-brand": toChannels("#6366F1"),
       "--tw-custom-color-accent": toChannels("#3B82F6"),
-      "--tw-custom-color-background": toChannels("#FAFAFA"),
-      "--tw-custom-color-text": toChannels("#111827"),
+      "--tw-custom-color-background": toChannels("#EEF2FF"),
+      "--tw-custom-color-text": toChannels("#1F2937"),
       "--tw-custom-color-positive": toChannels("#10B981"),
       "--tw-custom-color-negative": toChannels("#F97316"),
       "&.dark-mode": {
-        "--tw-custom-color-text": toChannels("#FAFAFA"),
-        "--tw-custom-color-background": toChannels("#111827"),
+        "--tw-custom-color-text": toChannels("#EEF2FF"),
+        "--tw-custom-color-background": toChannels("#1F2937"),
       },
     },
     // https://www.joshwcomeau.com/css/custom-css-reset/#digit-root-stacking-context
