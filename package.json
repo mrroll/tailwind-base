@@ -1,6 +1,6 @@
 {
   "name": "@mrroll/tailwind-base",
-  "version": "2.13.0",
+  "version": "2.14.0",
   "license": "MIT",
   "author": "mrroll",
   "main": "index.js",
@@ -17,7 +17,7 @@
     "@tailwindcss/line-clamp": "^0.4.0",
     "@tailwindcss/typography": "^0.5.2",
     "color": "^4.2.3",
-    "tailwindcss": "^0.0.0-insiders.6c63f67",
+    "tailwindcss": "^0.0.0-insiders.638c8f4",
     "tailwindcss-border-gradient-radius": "^3.0.1"
   },
   "devDependencies": {
