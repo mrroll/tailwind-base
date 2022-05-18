@@ -1,6 +1,6 @@
 {
   "name": "@mrroll/tailwind-base",
-  "version": "2.14.0",
+  "version": "2.15.0",
   "license": "MIT",
   "author": "mrroll",
   "main": "index.js",
@@ -17,11 +17,11 @@
     "@tailwindcss/line-clamp": "^0.4.0",
     "@tailwindcss/typography": "^0.5.2",
     "color": "^4.2.3",
-    "tailwindcss": "^0.0.0-insiders.638c8f4",
+    "tailwindcss": "^0.0.0-insiders.fc25299",
     "tailwindcss-border-gradient-radius": "^3.0.1"
   },
   "devDependencies": {
-    "@mrroll/eslint-config": "^8.17.0",
+    "@mrroll/eslint-config": "^8.18.0",
     "eslint": "^8.15.0",
     "prettier": "^2.6.2"
   }
