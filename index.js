@@ -8,9 +8,14 @@ module.exports = plugin(({ addBase }) => {
       "--tw-custom-color-brand": toChannels("#6366F1"),
       "--tw-custom-color-accent": toChannels("#3B82F6"),
       "--tw-custom-color-background": toChannels("#EEF2FF"),
-      "--tw-custom-color-text": toChannels("#1F2937"),
       "--tw-custom-color-positive": toChannels("#10B981"),
       "--tw-custom-color-negative": toChannels("#F97316"),
+
+      "--tw-custom-color-text": toChannels("#1F2937"),
+      "--tw-custom-color-text-brand": toChannels("#eef2ff"),
+      "--tw-custom-color-text-accent": toChannels("#eff6ff"),
+      "--tw-custom-color-text-positive": toChannels("#ECFDF5"),
+      "--tw-custom-color-text-negative": toChannels("#fff7ed"),
 
       "--tw-custom-animation-duration": "150ms",
 

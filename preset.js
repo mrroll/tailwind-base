@@ -4,7 +4,13 @@ const colors = {
   "color-brand": withOpacityValue("--tw-custom-color-brand"),
   "color-accent": withOpacityValue("--tw-custom-color-accent"),
   "color-background": withOpacityValue("--tw-custom-color-background"),
-  "color-text": withOpacityValue("--tw-custom-color-text"),
+  "color-text": {
+    base: withOpacityValue("--tw-custom-color-text"),
+    brand: withOpacityValue("--tw-custom-color-text-brand"),
+    accent: withOpacityValue("--tw-custom-color-text-accent"),
+    positive: withOpacityValue("--tw-custom-color-text-positive"),
+    negative: withOpacityValue("--tw-custom-color-text-negative"),
+  },
   "color-positive": withOpacityValue("--tw-custom-color-positive"),
   "color-negative": withOpacityValue("--tw-custom-color-negative"),
 };
