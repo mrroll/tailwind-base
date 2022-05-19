@@ -1,19 +1,5 @@
-const withOpacityValue = require("./withOpacityValue");
-
-const colors = {
-  "color-brand": withOpacityValue("--tw-custom-color-brand"),
-  "color-accent": withOpacityValue("--tw-custom-color-accent"),
-  "color-background": withOpacityValue("--tw-custom-color-background"),
-  "color-text": {
-    base: withOpacityValue("--tw-custom-color-text"),
-    brand: withOpacityValue("--tw-custom-color-text-brand"),
-    accent: withOpacityValue("--tw-custom-color-text-accent"),
-    positive: withOpacityValue("--tw-custom-color-text-positive"),
-    negative: withOpacityValue("--tw-custom-color-text-negative"),
-  },
-  "color-positive": withOpacityValue("--tw-custom-color-positive"),
-  "color-negative": withOpacityValue("--tw-custom-color-negative"),
-};
+const radix = require("./radix/preset");
+const withOpacityValue = require("./tailwindcss/withOpacityValue");
 
 module.exports = {
   corePlugins: {
@@ -22,7 +8,35 @@ module.exports = {
 
   theme: {
     extend: {
-      colors,
+      colors: {
+        ...radix,
+        ...[
+          "--tw-custom-color-bg",
+          "--tw-custom-color-bg-hover",
+          "--tw-custom-color-component",
+          "--tw-custom-color-component-hover",
+          "--tw-custom-color-component-focus",
+          "--tw-custom-color-border",
+          "--tw-custom-color-border-hover",
+          "--tw-custom-color-border-focus",
+          "--tw-custom-color-section",
+          "--tw-custom-color-section-hover",
+          "--tw-custom-color-section-accent",
+          "--tw-custom-color-section-text",
+          "--tw-custom-color-text",
+          "--tw-custom-color-positive",
+          "--tw-custom-color-positive-text",
+          "--tw-custom-color-negative",
+          "--tw-custom-color-negative-text",
+        ].reduce((all, current) => {
+          return {
+            ...all,
+            ...{
+              [current.replace(/^--tw-custom-/, "")]: withOpacityValue(current),
+            },
+          };
+        }, {}),
+      },
 
       keyframes: {
         "fade-in": {
@@ -111,29 +125,29 @@ module.exports = {
 
       // prettier-ignore
       animation: {
-        "fade-in"              : "fade-in var(--tw-custom-animation-duration) linear" ,
-        "fade-out"             : "fade-out var(--tw-custom-animation-duration) linear" ,
-        "rotate-in"            : "rotate-in var(--tw-custom-animation-duration) ease" ,
-        "rotate-out"           : "rotate-out var(--tw-custom-animation-duration) ease" ,
-        "slide-in-from-top"    : "slide-in-from-top var(--tw-custom-animation-duration) ease-in-out" ,
-        "slide-in-from-right"  : "slide-in-from-right var(--tw-custom-animation-duration) ease-in-out" ,
-        "slide-in-from-bottom" : "slide-in-from-bottom var(--tw-custom-animation-duration) ease-in-out" ,
-        "slide-in-from-left"   : "slide-in-from-left var(--tw-custom-animation-duration) ease-in-out" ,
-        "slide-out-to-top"     : "slide-out-to-top var(--tw-custom-animation-duration) ease-in-out" ,
-        "slide-out-to-right"   : "slide-out-to-right var(--tw-custom-animation-duration) ease-in-out" ,
-        "slide-out-to-bottom"  : "slide-out-to-bottom var(--tw-custom-animation-duration) ease-in-out" ,
-        "slide-out-to-left"    : "slide-out-to-left var(--tw-custom-animation-duration) ease-in-out" ,
+        "fade-in"              : "fade-in var(--tw-custom-animation-duration) var(--tw-custom-animation-timing-function)",
+        "fade-out"             : "fade-out var(--tw-custom-animation-duration) var(--tw-custom-animation-timing-function)",
+        "rotate-in"            : "rotate-in var(--tw-custom-animation-duration) var(--tw-custom-animation-timing-function)",
+        "rotate-out"           : "rotate-out var(--tw-custom-animation-duration) var(--tw-custom-animation-timing-function)",
+        "slide-in-from-top"    : "slide-in-from-top var(--tw-custom-animation-duration) var(--tw-custom-animation-timing-function)",
+        "slide-in-from-right"  : "slide-in-from-right var(--tw-custom-animation-duration) var(--tw-custom-animation-timing-function)",
+        "slide-in-from-bottom" : "slide-in-from-bottom var(--tw-custom-animation-duration) var(--tw-custom-animation-timing-function)",
+        "slide-in-from-left"   : "slide-in-from-left var(--tw-custom-animation-duration) var(--tw-custom-animation-timing-function)",
+        "slide-out-to-top"     : "slide-out-to-top var(--tw-custom-animation-duration) var(--tw-custom-animation-timing-function)",
+        "slide-out-to-right"   : "slide-out-to-right var(--tw-custom-animation-duration) var(--tw-custom-animation-timing-function)",
+        "slide-out-to-bottom"  : "slide-out-to-bottom var(--tw-custom-animation-duration) var(--tw-custom-animation-timing-function)",
+        "slide-out-to-left"    : "slide-out-to-left var(--tw-custom-animation-duration) var(--tw-custom-animation-timing-function)",
       },
 
       linearBorderGradients: ({ theme }) => {
         return {
           colors: {
-            "brand-accent": [
-              "rgb(var(--tw-custom-color-brand))",
-              "rgb(var(--tw-custom-color-accent))",
+            "section-accent": [
+              "rgb(var(--tw-custom-color-section))",
+              "rgb(var(--tw-custom-color-section-accent))",
             ],
           },
-          background: { ...colors, ...theme("colors") },
+          background: { ...radix, ...theme("colors") },
           borders: theme("borderWidth"),
         };
       },
