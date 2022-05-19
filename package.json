@@ -1,6 +1,6 @@
 {
   "name": "@mrroll/tailwind-base",
-  "version": "3.3.0",
+  "version": "3.4.0",
   "license": "MIT",
   "author": "mrroll",
   "main": "index.js",
@@ -23,7 +23,7 @@
     "tailwindcss-border-gradient-radius": "^3.0.1"
   },
   "devDependencies": {
-    "@mrroll/eslint-config": "^8.18.0",
+    "@mrroll/eslint-config": "^8.19.0",
     "eslint": "^8.15.0",
     "prettier": "^2.6.2"
   }
