@@ -22,7 +22,6 @@ module.exports = {
           "--tw-custom-color-section",
           "--tw-custom-color-section-hover",
           "--tw-custom-color-section-accent",
-          "--tw-custom-color-section-text",
           "--tw-custom-color-text",
           "--tw-custom-color-positive",
           "--tw-custom-color-positive-text",
