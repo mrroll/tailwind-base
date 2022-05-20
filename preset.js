@@ -1,5 +1,5 @@
 const radix = require("./radix/preset");
-const withOpacityValue = require("./tailwindcss/withOpacityValue");
+const { preset } = require("./theme");
 
 module.exports = {
   corePlugins: {
@@ -10,31 +10,7 @@ module.exports = {
     extend: {
       colors: {
         ...radix,
-        ...[
-          "--tw-custom-color-bg",
-          "--tw-custom-color-bg-hover",
-          "--tw-custom-color-component",
-          "--tw-custom-color-component-hover",
-          "--tw-custom-color-component-focus",
-          "--tw-custom-color-border",
-          "--tw-custom-color-border-hover",
-          "--tw-custom-color-border-focus",
-          "--tw-custom-color-section",
-          "--tw-custom-color-section-hover",
-          "--tw-custom-color-section-accent",
-          "--tw-custom-color-text",
-          "--tw-custom-color-positive",
-          "--tw-custom-color-positive-text",
-          "--tw-custom-color-negative",
-          "--tw-custom-color-negative-text",
-        ].reduce((all, current) => {
-          return {
-            ...all,
-            ...{
-              [current.replace(/^--tw-custom-/, "")]: withOpacityValue(current),
-            },
-          };
-        }, {}),
+        ...preset,
       },
 
       keyframes: {
@@ -146,7 +122,7 @@ module.exports = {
               "rgb(var(--tw-custom-color-section-accent))",
             ],
           },
-          background: { ...radix, ...theme("colors") },
+          background: { ...radix, ...preset, ...theme("colors") },
           borders: theme("borderWidth"),
         };
       },
