@@ -19,8 +19,8 @@ const uses = {
   "color-border-hover": "7",
   "color-border-focus": "8",
 
-  "color-section": "10",
-  "color-section-hover": "9",
+  "color-section": "9",
+  "color-section-hover": "10",
 
   "color-text": "12",
   "color-text-low-contrast": "11",
