@@ -2537,10 +2537,10 @@ tailwindcss-border-gradient-radius@^3.0.1:
     color "^3.1.2"
     lodash "^4.17.19"
 
-tailwindcss@^0.0.0-insiders.8164185:
-  version "0.0.0-insiders.8164185"
-  resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-0.0.0-insiders.8164185.tgz#f9ce379faa328bb8b5845ad23e60e694f8adddeb"
-  integrity sha512-WhZJUMOYNmaotYHslT34yF7LIvbXPKQ0s3gCFtNeTPODtl8Q5CRpIg+vGtSlDB+tADfAfDOtu9RTPJPWgljY/w==
+tailwindcss@^0.0.0-insiders.770900b:
+  version "0.0.0-insiders.770900b"
+  resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-0.0.0-insiders.770900b.tgz#d4934fa5c754b88a05eba9db1c8bd1275ff10471"
+  integrity sha512-0c9Fa7CwYx0/Ld77jhKVY7r/783EHEcE3dXFAOFDm8ARFwOMFBxsEBARFo2JCbjEqFnasj8t2/+ZpTuKmV4Ubg==
   dependencies:
     arg "^5.0.1"
     chokidar "^3.5.3"
