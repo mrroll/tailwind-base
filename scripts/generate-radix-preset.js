@@ -44,7 +44,7 @@ async function main() {
   );
 
   await fs.promises.writeFile(
-    "./radix/preset.js",
+    "./plugins/radix-colors/generated-colors.js",
 
     `const withOpacityValue = require("./withOpacityValue");
 
