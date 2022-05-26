@@ -3,6 +3,9 @@ const plugin = require("tailwindcss/plugin");
 
 module.exports = plugin(({ addBase }) => {
   addBase({
+    html: {
+      "overflow-y": "scroll",
+    },
     // https://www.joshwcomeau.com/css/custom-css-reset/
     // https://css-tricks.com/notes-on-josh-comeaus-custom-css-reset/
     "html, body, #__next, #root": {
