@@ -1,6 +1,6 @@
 {
   "name": "@mrroll/tailwind-base",
-  "version": "3.17.0",
+  "version": "3.18.0",
   "license": "MIT",
   "author": "mrroll",
   "main": "index.js",
@@ -10,7 +10,7 @@
     "publish:radix:preset": "node ./scripts/generate-radix-preset.js"
   },
   "volta": {
-    "node": "16.15.0",
+    "node": "16.15.1",
     "yarn": "1.22.18"
   },
   "dependencies": {
@@ -20,7 +20,7 @@
     "@tailwindcss/line-clamp": "^0.4.0",
     "@tailwindcss/typography": "^0.5.2",
     "color": "^4.2.3",
-    "tailwindcss": "^0.0.0-insiders.436b543",
+    "tailwindcss": "0.0.0-insiders.436b543",
     "tailwindcss-border-gradient-radius": "^3.0.1"
   },
   "devDependencies": {
