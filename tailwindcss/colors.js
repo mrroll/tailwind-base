@@ -1,1 +1,4 @@
-module.exports = require("tailwindcss/colors");
+/** @type {import('tailwindcss/colors')} */
+const colors = require("tailwindcss/colors");
+
+module.exports = colors;

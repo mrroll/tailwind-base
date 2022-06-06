@@ -1,1 +1,4 @@
-module.exports = require("tailwindcss/defaultTheme");
+/** @type {import('tailwindcss/defaultTheme')} */
+const defaultTheme = require("tailwindcss/defaultTheme");
+
+module.exports = defaultTheme;
