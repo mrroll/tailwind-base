@@ -1,6 +1,5 @@
 const radixColors = require("@radix-ui/colors");
 const toChannels = require("../../tailwindcss/toChannels");
-const withOpacityValue = require("../../tailwindcss/withOpacityValue");
 
 const prefix = "--tw-custom-";
 
@@ -79,7 +78,9 @@ module.exports.colors = Object.entries({
 
   return {
     ...all,
-    ...{ [key]: withOpacityValue(`${prefix}${key}`) },
-    ...{ [`${key}-accent`]: withOpacityValue(`${prefix}${key}-accent`) },
+    ...{ [key]: `rgb(var(${prefix}${key}) / <alpha-value>)` },
+    ...{
+      [`${key}-accent`]: `rgb(var(${prefix}${key}-accent) / <alpha-value>)`,
+    },
   };
 }, {});

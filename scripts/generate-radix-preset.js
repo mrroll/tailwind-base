@@ -39,16 +39,14 @@ async function main() {
       const color = Color(value, "hsl");
       const channels = color.rgb().array().join(" ");
 
-      return [`radix-${key}`, `withOpacityValue('${channels}')`];
+      return [`radix-${key}`, `rgb(${channels} / <alpha-value>)`];
     })
   );
 
   await fs.promises.writeFile(
     "./plugins/radix-colors/generated-colors.js",
 
-    `const withOpacityValue = require("./withOpacityValue");
-
-module.exports = ${JSON.stringify(allColorsObjectFormatted, null, 2)
+    `module.exports = ${JSON.stringify(allColorsObjectFormatted, null, 2)
       .replace(/"withOpacityValue(.+)",/g, "withOpacityValue$1,")
       .replace(/"withOpacityValue(.+)"/g, "withOpacityValue$1")}`
   );

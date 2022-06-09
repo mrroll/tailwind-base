@@ -328,10 +328,10 @@
     "@jridgewell/resolve-uri" "^3.0.3"
     "@jridgewell/sourcemap-codec" "^1.4.10"
 
-"@mrroll/eslint-config@^8.27.0":
-  version "8.27.0"
-  resolved "https://registry.yarnpkg.com/@mrroll/eslint-config/-/eslint-config-8.27.0.tgz#bb1f6cd0ba63d2fb127c2802b94cfff8fef2e530"
-  integrity sha512-aylLEIQf5cH2Hg+76v8lcfspf5/KHZeNMPKjFVtHs1ul6GDdJAKn9F/MlEvFlKblhJzEqkQhsH77Cr+sNmTzRQ==
+"@mrroll/eslint-config@^8.28.0":
+  version "8.28.0"
+  resolved "https://registry.yarnpkg.com/@mrroll/eslint-config/-/eslint-config-8.28.0.tgz#3bad17cc51d4a3e415e7cf51b0412fdc792432ed"
+  integrity sha512-+SjJoHefB+nYSVRN5P1fShwuZ5Z1dgbESNYxxGQTxmm9JmQ1FRuo/eiUrBr+pra+XNxc1AlBIvb/+oZyxzC5gg==
   dependencies:
     "@babel/core" "^7.18.2"
     "@babel/eslint-parser" "^7.18.2"
@@ -2596,10 +2596,10 @@ tailwindcss-border-gradient-radius@^3.0.1:
     color "^3.1.2"
     lodash "^4.17.19"
 
-tailwindcss@^0.0.0-insiders.a0c2ee8:
-  version "0.0.0-insiders.a0c2ee8"
-  resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-0.0.0-insiders.a0c2ee8.tgz#c6cf2edf26f1730564792d325634e24b6deed81b"
-  integrity sha512-H6krfkR3nemFFbKDNF6EGFXMChbdwqvolJw51Qhm0mj/e7YNMDM4CGIKgBzfpLyusxKm1D8lwsrcBuS+iGAO4g==
+tailwindcss@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-3.1.0.tgz#126e5abd0831dbfdaabea1474c746384c73836ab"
+  integrity sha512-XzXq31Fj6RizhlFVNLBlDqzs0dXuIEOAknuOcKx2R/IIQbEz5DnngslYY4JNN6e9JkNBjHGm1w2XDABsADg1ng==
   dependencies:
     arg "^5.0.1"
     chokidar "^3.5.3"
